@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monserrat', sans-serif;
+  }
+
+header {
+    
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+  }
+
+.ver-carro{
+    font-size: 20px;
+    margin-right: 60px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+    color: white;
+}
+
+.ver-carro:hover{
+    opacity: 0.7;
+}
+
+.banner{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),
+    url("https://olusacontratistas.com/wp-content/uploads/2022/06/Servicios-Generales-Olusa-Contratisas-Generales-Peru.jpg");
+}
+
+.banner-container{
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner h1{
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px  rgba(0,0,0,0.2);
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.banner p{
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px  rgba(0,0,0,0.2);
+}
+
+.principal{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}  
+.cards-container{
+    display: flex;
+}
+
+.card{
+    border-radius:30px solid black;
+    max-width: 40%;
+    margin: auto ;
+    margin-top: 15px;
+    background: white;
+    box-shadow: 0px 0px  8px 0px black(0,0,0,0.45);
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.card > img{
+    width: 70%;
+    height: 260px;
+    align-items: center;
+}
+
+.card .content{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.card .price{
+    color: grey;
+    font-size: 22px;
+    
+}
+
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover{
+    opacity: 0.7;
+}
+
+.contenido-carro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+
+}
+
+.contenido-carro img{
+    width: 120px;
+    height:120px;
+
+}
+
+.total-compra{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
