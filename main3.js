@@ -3,7 +3,6 @@ const addToCar=document.getElementById("verCarro")
 const mostrarCarro=document.getElementById("carrito-container")
 let eventoCategoria=''
 
-
 class Servicio{
     constructor(nombreServicio,descripcion,categoria,imagen,precio){
         this.nombreServicio=nombreServicio
@@ -30,23 +29,6 @@ const servicios = [
 let carroCompra=[]
 
 const postearServicios = (servicio) =>{
-    
-}
-
-// const UpdateCarro =()=>{
-//   mostrarCarro.innerHTML=""
-//   carroCompra.forEach((servicio)=>{
-//     mostrarCarro.innerHTML+=`
-    
-//     <img src="${servicio.imagen}">
-//     <h3>${servicio.nombreServicio}</h3>
-//     <span> $ ${servicio.precio} </span>
-    
-//     `
-//   })
-
-
-servicios.forEach((servicio)=>{
   let contenido= document.createElement("div")
   contenido.className="card"
   contenido.innerHTML= `
@@ -54,9 +36,8 @@ servicios.forEach((servicio)=>{
   <h3>${servicio.nombreServicio}</h3>
   <p>${servicio.descripcion}</p>
   <span> $ ${servicio.precio} </span>
-  `
-
-contenedorPrincipal.append(contenido)
+    `
+  contenedorPrincipal.append(contenido)
 
   let agregar=document.createElement("button")
   agregar.innerText = "Lo quiero!"
@@ -70,63 +51,55 @@ contenedorPrincipal.append(contenido)
       nombre: servicio.nombreServicio,
       precio: servicio.precio
     })
-    UpdateCarro()
+   
   })
- 
+}
 
+servicios.forEach((servicio)=>{
+  postearServicios(servicio)  
 })
-
-
-
-addToCar.addEventListener("click",()=>{
-  mostrarCarro.innerHTML=""
-  carroCompra.forEach((servicio)=>{
-    
-    let contenidoCarro= document.createElement("div")
-    
-    contenidoCarro.className="contenido-carro"
-    
-    contenidoCarro.innerHTML= `
-    <img src="${servicio.img}"
-    <h3>${servicio.nombre}</h3>
-    <span> $ ${servicio.precio} </span>
-    `
-    
-mostrarCarro.append(contenidoCarro)
-  
-  })
-
-  const totalCarro=carroCompra.reduce((acum,e)=>acum +e.precio,0)
-
-  const totalCompra=document.createElement("div")
-  totalCompra.className="total-compra"
-  totalCompra.innerHTML=`Total a Pagar: $ ${totalCarro}`
-
-  mostrarCarro.append(totalCompra)
-  localStorage.setItem("Carro",JSON.stringify(carroCompra))
-
-
-})
-
-
-
-
-
-//-----Pseudo Filtro-----INCOMPLETO
 
 const categorias=document.getElementsByClassName("nav-link")
 const arregloCategorias= Array.from(categorias)
 
 arregloCategorias.forEach((link)=>{
   link.addEventListener("click",(e)=>{
+    e.preventDefault()
     contenedorPrincipal.innerHTML=''
-    eventoCategoria= e.target.InnerText
-    const filtroServicios=servicios.filter((servicio)=> servicio.categoria == eventoCategoria)
+    eventoCategoria= e.target.innerText
+    console.log(eventoCategoria)
+    const filtroServicios=servicios.filter((servicio)=> servicio.categoria.toUpperCase() == eventoCategoria.toUpperCase())
+    console.log(filtroServicios)
      filtroServicios.forEach((servicio)=> postearServicios( servicio))
   })
 })
 
-
-
-
-//min 1:53
+addToCar.addEventListener("click",()=>{
+    mostrarCarro.innerHTML=""
+    carroCompra.forEach((servicio)=>{
+      
+      let contenidoCarro= document.createElement("div")
+      
+      contenidoCarro.className="contenido-carro"
+      
+      contenidoCarro.innerHTML= `
+      <img src="${servicio.img}"
+      <h3>${servicio.nombre}</h3>
+      <span> $ ${servicio.precio} </span>
+      `
+      
+  mostrarCarro.append(contenidoCarro)
+    
+    })
+  
+    const totalCarro=carroCompra.reduce((acum,e)=>acum +e.precio,0)
+  
+    const totalCompra=document.createElement("div")
+    totalCompra.className="total-compra"
+    totalCompra.innerHTML=`Total a Pagar: $ ${totalCarro}`
+  
+    mostrarCarro.append(totalCompra)
+    localStorage.setItem("Carro",JSON.stringify(carroCompra))
+  
+  
+  })
