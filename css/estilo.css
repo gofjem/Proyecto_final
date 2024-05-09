@@ -118,6 +118,7 @@ header {
     align-items: center;
     width: 70%;
     margin: 10px;
+    font-size: 20px;
 
 }
 
@@ -170,6 +171,10 @@ header {
 
 .eliminar-producto{
     cursor: pointer;
+}
+
+.eliminar-producto:hover{
+    background-color: red;
 }
 /* contador de carro de compra */
 .cantidad-carro{

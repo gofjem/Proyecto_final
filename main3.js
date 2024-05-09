@@ -72,7 +72,9 @@ const postearServicios = (servicio) =>{
     console.log(carroCompra);
     contadorCarro()
     guardarStorage()
+   
   })
+ 
   
 }
 
@@ -125,7 +127,7 @@ fetch("./servicios.json")
       mostrarCarro.append(headerCarrito)
      
       const cerrarHeader= document.createElement("span")
-      cerrarHeader.innerHTML="❌"
+      cerrarHeader.innerHTML="❌ Cerrar"
       cerrarHeader.className="cerrar-header-button"
 
       cerrarHeader.addEventListener("click",()=>{
@@ -177,6 +179,11 @@ fetch("./servicios.json")
       })
       contadorCarro()
       desplegarCarro()
+      Swal.fire({
+        title: `¡Su producto se ha eliminado correctamente!`,
+        icon: "success",
+        width: "350px"
+      });
     }
 
     const contadorCarro=()=>{
