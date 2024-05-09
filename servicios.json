@@ -1,0 +1,84 @@
+    {
+        "servicios":[
+            {
+                "nombreServicio":"Instalación de Griferia",
+                "descripcion":"Se repara cualquier averia que tenga en su cocina, baños, etc",
+                "categoria":"plomeria",
+                "imagen":"https://sodimac.scene7.com/is/image/SodimacCL/3686183_01?wid=800&hei=800&qlt=70",
+                "precio":10000,
+                "cantidad":1
+            },
+            {
+                "nombreServicio":"Reparación de tuberias",
+                "descripcion":"Se repara cualquier averia que tenga en su cocina, baños, etc",
+                "categoria":"plomeria",
+                "imagen":"https://www.cronoshare.com/blog/wp-content/uploads/2020/11/C%C3%B3mo-reparar-una-tuber%C3%ADa-de-cobre.jpg",
+                "precio":20000,
+                "cantidad":1
+            },
+            {
+                "nombreServicio":"Instalación de Sanitarios",
+                "descripcion":"Se repara cualquier averia que tenga en su cocina, baños, etc",
+                "categoria":"plomeria",
+                "imagen":"https://maestros.com.co/wp-content/uploads/2016/10/Instalaci%C3%B3n-de-sanitario-1.jpg",
+                "precio":30000,
+                "cantidad":1
+            },
+            {
+                "nombreServicio":"Instalación de Lamparas",
+                "descripcion":"Se repara cualquier averia que tenga en su cocina, baños, etc",
+                "categoria":"electricidad",
+                "imagen":"https://cdn.manomano.com/media/edison/9/3/c/e/93ce2685d4dd.jpg",
+                "precio":15000,
+                "cantidad":1
+            },
+            {
+                "nombreServicio":"Reparación de neveras",
+                "descripcion":"Se repara cualquier averia que tenga en su cocina, baños, etc",
+                "categoria":"electricidad",
+                "imagen":"https://www.serviciotecnicoenbarcelona.es/wp-content/uploads/2020/10/neveras-1.jpg",
+                "precio":25000,
+                "cantidad":1
+            },
+            {
+                "nombreServicio":"Reparación de hornos",
+                "descripcion":"Se repara cualquier averia que tenga en su cocina, baños, etc",
+                "categoria":"electricidad",
+                "imagen":"https://servicio-tecnico-en-lima.com/wp-content/uploads/2021/03/6-48-1024x576-1.jpg",
+                "precio":35000,
+                "cantidad":1
+            },
+            {
+                "nombreServicio":"Muebles a medida",
+                "descripcion":"Se repara cualquier averia que tenga en su cocina, baños, etc",
+                "categoria":"carpinteria",
+                "imagen":"https://images.hola.com/imagenes/decoracion/20211202200655/muebles-a-medida-cuando-y-como-elegirlos-il/1-26-833/muebles-a-medida-11a-a.jpg",
+                "precio":55000,
+                "cantidad":1
+            },
+            {
+                "nombreServicio":"Instalación de pisos de madera y/o flotante",
+                "descripcion":"Se repara cualquier averia que tenga en su cocina, baños, etc",
+                "categoria":"carpinteria",
+                "imagen":"https://i.ytimg.com/vi/YOQdo1evTnw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAHoND7dNuYA1aNNHPrV_EJZGV9bg",
+                "precio":98000,
+                "cantidad":1
+            },
+            {
+                "nombreServicio":"Armado de muebles y mesas",
+                "descripcion":"Se repara cualquier averia que tenga en su cocina, baños, etc",
+                "categoria":"armado",
+                "imagen":"https://sodimac.scene7.com/is/image/SodimacCL/6441009_01?wid=800&hei=800&qlt=70",
+                "precio":35000,
+                "cantidad":1
+            },
+            {
+                "nombreServicio":"Armado de comodas y otros",
+                "descripcion":"Se repara cualquier averia que tenga en su cocina, baños, etc",
+                "categoria":"armado",
+                "imagen":"https://static2.elcontainer.cl/4318-thickbox_default/armado-de-mueble-solo-retiro-en-tienda.jpg",
+                "precio":25000,
+                "cantidad":1
+            }
+        ]
+    }

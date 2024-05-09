@@ -133,3 +133,52 @@ header {
     text-align: center;
     padding-top: 20px;
 }
+
+.carritoContainer{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* top carro */
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+
+}
+
+.modal-contenido-carro{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+/* min48 */
+.header-carrito{
+    justify-self: start; 
+} 
+
+.cerrar-header-button{
+    cursor: pointer;
+    flex-direction: row;
+}
+
+.eliminar-producto{
+    cursor: pointer;
+}
+/* contador de carro de compra */
+.cantidad-carro{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    position: absolute;
+    display: none;
+}
