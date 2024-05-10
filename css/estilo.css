@@ -171,6 +171,8 @@ header {
 
 .eliminar-producto{
     cursor: pointer;
+    padding: 12px;
+    border-radius: 20%;
 }
 
 .eliminar-producto:hover{
